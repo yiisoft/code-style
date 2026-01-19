@@ -1,0 +1,32 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# Mac DS_Store Files
+.DS_Store
+
+# composer vendor dir
+/vendor
+# composer lock file
+/composer.lock
+# composer itself is not needed
+composer.phar
+
+# PhpUnit
+/phpunit.phar
+/phpunit.xml
+/.phpunit.cache
+
+# PHP CS Fixer
+/.php-cs-fixer.cache
+/.php-cs-fixer.php
