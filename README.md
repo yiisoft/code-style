@@ -26,7 +26,7 @@ The package ...
 The package could be installed with [Composer](https://getcomposer.org):
 
 ```shell
-composer require yiisoft/code-style
+composer require --dev yiisoft/code-style
 ```
 
 ## General usage
