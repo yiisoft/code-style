@@ -11,7 +11,7 @@ use Yiisoft\CodeStyle\Sets\YiisoftCoreSet;
 
 final class ConfigBuilder
 {
-    public static function build(): ConfigInterface
+    public static function build(): Config
     {
         return (new Config())
             ->registerCustomRuleSets([
