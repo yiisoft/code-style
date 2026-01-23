@@ -36,7 +36,6 @@
         "maglnet/composer-require-checker": "^4.7.1",
         "phpunit/phpunit": "^10.5.46",
         "rector/rector": "^2.0.16",
-        "spatie/phpunit-watcher": "^1.24",
         "vimeo/psalm": "^5.26.1 || ^6.10.3"
     },
     "autoload": {
@@ -57,7 +56,6 @@
     },
     "scripts": {
         "test": "phpunit --testdox --no-interaction",
-        "test-watch": "phpunit-watcher watch",
         "cs-fix": "php-cs-fixer fix"
     }
 }
