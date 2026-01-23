@@ -10,7 +10,6 @@
 [![Total Downloads](https://poser.pugx.org/yiisoft/code-style/downloads)](https://packagist.org/packages/yiisoft/code-style)
 [![Build status](https://github.com/yiisoft/code-style/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/yiisoft/code-style/actions/workflows/build.yml?query=branch%3Amaster)
 [![Code Coverage](https://codecov.io/gh/yiisoft/code-style/branch/master/graph/badge.svg)](https://codecov.io/gh/yiisoft/code-style)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyiisoft%2Fcode-style%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/yiisoft/code-style/master)
 [![Static analysis](https://github.com/yiisoft/code-style/actions/workflows/static.yml/badge.svg?branch=master)](https://github.com/yiisoft/code-style/actions/workflows/static.yml?query=branch%3Amaster)
 [![type-coverage](https://shepherd.dev/github/yiisoft/code-style/coverage.svg)](https://shepherd.dev/github/yiisoft/code-style)
 [![psalm-level](https://shepherd.dev/github/yiisoft/code-style/level.svg)](https://shepherd.dev/github/yiisoft/code-style)
