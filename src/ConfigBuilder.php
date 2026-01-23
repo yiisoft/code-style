@@ -13,10 +13,12 @@ final class ConfigBuilder
 {
     public static function build(): Config
     {
-        return (new Config())
-            ->registerCustomRuleSets([
-                new YiisoftCoreSet(),
-                new YiisoftCoreRiskySet(),
-            ]);
+        $config = (new Config());
+        $config->registerCustomRuleSets([
+            new YiisoftCoreSet(),
+            new YiisoftCoreRiskySet(),
+        ]);
+
+        return $config;
     }
 }
