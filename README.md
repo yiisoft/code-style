@@ -14,11 +14,12 @@
 [![type-coverage](https://shepherd.dev/github/yiisoft/code-style/coverage.svg)](https://shepherd.dev/github/yiisoft/code-style)
 [![psalm-level](https://shepherd.dev/github/yiisoft/code-style/level.svg)](https://shepherd.dev/github/yiisoft/code-style)
 
-Package for code style control. Contains rule sets for [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer).
+A package that provides [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) rule sets for enforcing code style 
+in Yii packages.
 
 ## Requirements
 
-- PHP 8.1 or higher.
+- PHP 7.4 or higher.
 
 ## Installation
 
