@@ -15,7 +15,7 @@
 [![type-coverage](https://shepherd.dev/github/yiisoft/code-style/coverage.svg)](https://shepherd.dev/github/yiisoft/code-style)
 [![psalm-level](https://shepherd.dev/github/yiisoft/code-style/level.svg)](https://shepherd.dev/github/yiisoft/code-style)
 
-The package ...
+Package for code style control. Contains rule sets for [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer).
 
 ## Requirements
 
@@ -26,10 +26,40 @@ The package ...
 The package could be installed with [Composer](https://getcomposer.org):
 
 ```shell
-composer require yiisoft/code-style
+composer require --dev yiisoft/code-style
 ```
 
 ## General usage
+
+The package contains the following sets of rules:
+
+1. `@Yiisoft/Core`
+2. `@Yiisoft/Core:risky`
+
+An example configuration using these rule sets:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use PhpCsFixer\Finder;
+use Yiisoft\CodeStyle\ConfigBuilder;
+
+$finder = (new Finder())->in([
+    __DIR__ . '/src',
+    __DIR__ . '/tests',
+]);
+
+return ConfigBuilder::build()
+    ->setRiskyAllowed(true)
+    ->setRules([
+        '@Yiisoft/Core' => true,
+        '@Yiisoft/Core:risky' => true,
+    ])
+    ->setFinder($finder);
+
+```
 
 ## Documentation
 
