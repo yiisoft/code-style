@@ -18,6 +18,12 @@ The code is statically analyzed with [Psalm](https://psalm.dev/). To run static 
 
 ## Code style
 
+Package used [PHP CS Fixer](https://cs.symfony.com/) to maintain Yii code style. To check and fix code style:
+
+```shell
+composer cs-fix
+```
+
 Use [Rector](https://github.com/rectorphp/rector) to make codebase follow some specific rules or
 use either newest or any specific version of PHP:
 
