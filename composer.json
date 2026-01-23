@@ -1,7 +1,7 @@
 {
     "name": "yiisoft/code-style",
     "type": "library",
-    "description": "Code style tools rulesets collection",
+    "description": "PHP CS Fixer rule sets for Yii packages",
     "keywords": [
         "yii",
         "code style"
@@ -26,8 +26,6 @@
             "url": "https://github.com/sponsors/yiisoft"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
         "php": "^8.1",
         "friendsofphp/php-cs-fixer": "^3.92.5"
