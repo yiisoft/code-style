@@ -10,16 +10,16 @@
 [![Total Downloads](https://poser.pugx.org/yiisoft/code-style/downloads)](https://packagist.org/packages/yiisoft/code-style)
 [![Build status](https://github.com/yiisoft/code-style/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/yiisoft/code-style/actions/workflows/build.yml?query=branch%3Amaster)
 [![Code Coverage](https://codecov.io/gh/yiisoft/code-style/branch/master/graph/badge.svg)](https://codecov.io/gh/yiisoft/code-style)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyiisoft%2Fcode-style%2Fmaster)](https://dashboard.stryker-mutator.io/reports/github.com/yiisoft/code-style/master)
 [![Static analysis](https://github.com/yiisoft/code-style/actions/workflows/static.yml/badge.svg?branch=master)](https://github.com/yiisoft/code-style/actions/workflows/static.yml?query=branch%3Amaster)
 [![type-coverage](https://shepherd.dev/github/yiisoft/code-style/coverage.svg)](https://shepherd.dev/github/yiisoft/code-style)
 [![psalm-level](https://shepherd.dev/github/yiisoft/code-style/level.svg)](https://shepherd.dev/github/yiisoft/code-style)
 
-Package for code style control. Contains rule sets for [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer).
+A package that provides [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) rule sets for enforcing code style 
+in Yii packages.
 
 ## Requirements
 
-- PHP 8.1 or higher.
+- PHP 7.4 or higher.
 
 ## Installation
 
@@ -86,3 +86,7 @@ Maintained by [Yii Software](https://www.yiiframework.com/).
 [![Telegram](https://img.shields.io/badge/telegram-join-1DA1F2?style=flat&logo=telegram)](https://t.me/yii3en)
 [![Facebook](https://img.shields.io/badge/facebook-join-1DA1F2?style=flat&logo=facebook&logoColor=ffffff)](https://www.facebook.com/groups/yiitalk)
 [![Slack](https://img.shields.io/badge/slack-join-1DA1F2?style=flat&logo=slack)](https://yiiframework.com/go/slack)
+
+## Credits
+
+The package is inspired by [spiral/code-style](https://github.com/spiral/code-style) repository.
