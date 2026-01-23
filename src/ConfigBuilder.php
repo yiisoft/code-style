@@ -12,7 +12,7 @@ final class ConfigBuilder
 {
     public static function build(): Config
     {
-        $config = (new Config());
+        $config = new Config();
         $config->registerCustomRuleSets([
             new YiisoftCoreSet(),
             new YiisoftCoreRiskySet(),
