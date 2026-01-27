@@ -17,8 +17,8 @@ final class YiisoftCoreRiskySet implements RuleSetDefinitionInterface
     {
         return [
             'declare_strict_types' => true,
-            'native_function_invocation' => true,
             'native_constant_invocation' => true,
+            'native_function_invocation' => true,
         ];
     }
 
