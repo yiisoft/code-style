@@ -17,14 +17,6 @@ final class YiisoftCoreSet implements RuleSetDefinitionInterface
     {
         return [
             '@PER-CS' => true,
-            'no_unused_imports' => true,
-            'no_extra_blank_lines' => [
-                'tokens' => [
-                    'curly_brace_block',
-                    'extra',
-                ],
-            ],
-            'ordered_class_elements' => true,
             'class_attributes_separation' => ['elements' => ['method' => 'one']],
             'fully_qualified_strict_types' => [
                 'import_symbols' => true,
@@ -34,6 +26,15 @@ final class YiisoftCoreSet implements RuleSetDefinitionInterface
                 'import_constants' => true,
                 'import_functions' => true,
             ],
+            'no_empty_statement' => true,
+            'no_extra_blank_lines' => [
+                'tokens' => [
+                    'curly_brace_block',
+                    'extra',
+                ],
+            ],
+            'no_unused_imports' => true,
+            'ordered_class_elements' => true,
         ];
     }
 
