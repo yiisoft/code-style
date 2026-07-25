@@ -65,32 +65,12 @@ return ConfigBuilder::build()
 
 ### Rector
 
-The package also provides [Rector](https://github.com/rectorphp/rector) rules:
+The package provides [Rector](https://github.com/rectorphp/rector) rules:
 
-- `Yiisoft\CodeStyle\Rector\Rules\RemoveOverrideAttributeRector` — removes the `#[Override]` attribute from methods.
-  Useful for packages that support PHP versions lower than 8.3, where the attribute is not available.
+- `RemoveOverrideAttributeRector` — removes the `#[Override]` attribute from methods. Yii convention is not to use
+  this attribute.
 
-An example configuration using this rule:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-use Rector\Config\RectorConfig;
-use Yiisoft\CodeStyle\Rector\Rules\RemoveOverrideAttributeRector;
-
-return RectorConfig::configure()
-    ->withPaths([
-        __DIR__ . '/src',
-        __DIR__ . '/tests',
-    ])
-    ->withRules([
-        RemoveOverrideAttributeRector::class,
-    ]);
-```
-
-The rules are also bundled into a ready-to-use `Yiisoft\CodeStyle\Rector\SetList::YII_CORE` set:
+A ready-to-use `SetList::YII_CORE` set with rules recommended for Yii packages is also provided:
 
 ```php
 <?php
