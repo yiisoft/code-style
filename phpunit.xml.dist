@@ -4,7 +4,7 @@
          backupGlobals="false"
          colors="true"
          verbose="true"
-         bootstrap="tests/bootstrap.php"
+         bootstrap="vendor/autoload.php"
          failOnRisky="true"
          failOnWarning="true"
          convertErrorsToExceptions="true"
