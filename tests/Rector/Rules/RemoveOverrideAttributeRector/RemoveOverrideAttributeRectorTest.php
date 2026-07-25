@@ -7,6 +7,9 @@ namespace Yiisoft\CodeStyle\Tests\Rector\Rules\RemoveOverrideAttributeRector;
 use Iterator;
 use Rector\Testing\PHPUnit\AbstractRectorTestCase;
 
+/**
+ * @requires PHP >= 8.3
+ */
 final class RemoveOverrideAttributeRectorTest extends AbstractRectorTestCase
 {
     /**
