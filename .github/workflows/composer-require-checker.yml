@@ -7,6 +7,7 @@ on:
       - 'tests/**'
       - 'composer.json'
       - '.github/workflows/composer-require-checker.yml'
+      - 'composer-require-checker.json'
   push:
     branches: ['master']
     paths: *paths
