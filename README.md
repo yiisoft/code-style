@@ -14,8 +14,8 @@
 [![type-coverage](https://shepherd.dev/github/yiisoft/code-style/coverage.svg)](https://shepherd.dev/github/yiisoft/code-style)
 [![psalm-level](https://shepherd.dev/github/yiisoft/code-style/level.svg)](https://shepherd.dev/github/yiisoft/code-style)
 
-A package that provides [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) rule sets for enforcing code style 
-in Yii packages.
+A package that provides [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) rule sets and
+[Rector](https://github.com/rectorphp/rector) rules for enforcing code style in Yii packages.
 
 ## Requirements
 
@@ -59,6 +59,51 @@ return ConfigBuilder::build()
     ])
     ->setFinder($finder);
 
+```
+
+The package also provides [Rector](https://github.com/rectorphp/rector) rules:
+
+- `Yiisoft\CodeStyle\Rector\Rules\RemoveOverrideAttributeRector` — removes the `#[Override]` attribute from methods.
+  Useful for packages that support PHP versions lower than 8.3, where the attribute is not available.
+
+An example configuration using this rule:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Rector\Config\RectorConfig;
+use Yiisoft\CodeStyle\Rector\Rules\RemoveOverrideAttributeRector;
+
+return RectorConfig::configure()
+    ->withPaths([
+        __DIR__ . '/src',
+        __DIR__ . '/tests',
+    ])
+    ->withRules([
+        RemoveOverrideAttributeRector::class,
+    ]);
+```
+
+The rules are also bundled into a ready-to-use `Yiisoft\CodeStyle\Rector\SetList::YII_CORE` set:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Rector\Config\RectorConfig;
+use Yiisoft\CodeStyle\Rector\SetList;
+
+return RectorConfig::configure()
+    ->withPaths([
+        __DIR__ . '/src',
+        __DIR__ . '/tests',
+    ])
+    ->withSets([
+        SetList::YII_CORE,
+    ]);
 ```
 
 ## Documentation
