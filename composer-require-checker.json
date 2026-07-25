@@ -10,5 +10,18 @@
         "Symplify\\RuleDocGenerator\\Contract\\DocumentedRuleInterface",
         "Symplify\\RuleDocGenerator\\ValueObject\\CodeSample\\CodeSample",
         "Symplify\\RuleDocGenerator\\ValueObject\\RuleDefinition"
-    ]
+    ],
+    "php-core-extensions": [
+        "Core",
+        "date",
+        "json",
+        "hash",
+        "pcre",
+        "Phar",
+        "Reflection",
+        "SPL",
+        "random",
+        "standard"
+    ],
+    "scan-files": []
 }
