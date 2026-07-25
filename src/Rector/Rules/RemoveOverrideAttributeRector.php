@@ -33,7 +33,7 @@ final class RemoveOverrideAttributeRector extends AbstractRector implements Docu
                     }
                     CODE_SAMPLE,
                 ),
-            ]
+            ],
         );
     }
 
