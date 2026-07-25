@@ -25,7 +25,6 @@ jobs:
     secrets:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     with:
-      coverage: xdebug
       os: >-
         ['ubuntu-latest', 'windows-latest']
       php: >-
