@@ -31,6 +31,8 @@ composer require --dev yiisoft/code-style
 
 ## General usage
 
+### PHP CS Fixer
+
 The package contains the following sets of rules:
 
 1. `@Yiisoft/Core`
@@ -60,6 +62,8 @@ return ConfigBuilder::build()
     ->setFinder($finder);
 
 ```
+
+### Rector
 
 The package also provides [Rector](https://github.com/rectorphp/rector) rules:
 

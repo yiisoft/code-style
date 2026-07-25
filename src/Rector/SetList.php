@@ -6,5 +6,5 @@ namespace Yiisoft\CodeStyle\Rector;
 
 final class SetList
 {
-    public const YII_CORE = __DIR__ . '/Sets/yii-core.php';
+    public const YII_CORE = __DIR__ . '/sets/yii-core.php';
 }
