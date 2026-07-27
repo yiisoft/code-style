@@ -1,5 +1,9 @@
 # Yii Code Style Change Log
 
+## 1.1.1 under development
+
+- no changes in this release.
+
 ## 1.1.0 July 27, 2026
 
 - New #11: Add `RemoveOverrideAttributeRector` Rector rule (@vjik)
