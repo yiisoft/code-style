@@ -28,12 +28,12 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "friendsofphp/php-cs-fixer": "^3.92.5"
+        "friendsofphp/php-cs-fixer": "^3.92.5",
+        "rector/rector": "^2.0"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^3.8.0 || ^4.7.1",
         "phpunit/phpunit": "^9.6.31",
-        "rector/rector": "^2.3.4",
         "vimeo/psalm": "^5.26.1 || ^6.10.3"
     },
     "autoload": {

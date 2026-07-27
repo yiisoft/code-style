@@ -14,8 +14,8 @@
 [![type-coverage](https://shepherd.dev/github/yiisoft/code-style/coverage.svg)](https://shepherd.dev/github/yiisoft/code-style)
 [![psalm-level](https://shepherd.dev/github/yiisoft/code-style/level.svg)](https://shepherd.dev/github/yiisoft/code-style)
 
-A package that provides [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) rule sets for enforcing code style 
-in Yii packages.
+A package that provides [PHP CS Fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) rule sets and
+[Rector](https://github.com/rectorphp/rector) rules for enforcing code style in Yii packages.
 
 ## Requirements
 
@@ -30,6 +30,8 @@ composer require --dev yiisoft/code-style
 ```
 
 ## General usage
+
+### PHP CS Fixer
 
 The package contains the following sets of rules:
 
@@ -59,6 +61,33 @@ return ConfigBuilder::build()
     ])
     ->setFinder($finder);
 
+```
+
+### Rector
+
+The package provides [Rector](https://github.com/rectorphp/rector) rules:
+
+- `RemoveOverrideAttributeRector` — removes the `#[Override]` attribute from methods. Yii convention is not to use
+  this attribute.
+
+A ready-to-use `SetList::YII_CORE` set with rules recommended for Yii packages is also provided:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Rector\Config\RectorConfig;
+use Yiisoft\CodeStyle\Rector\SetList;
+
+return RectorConfig::configure()
+    ->withPaths([
+        __DIR__ . '/src',
+        __DIR__ . '/tests',
+    ])
+    ->withSets([
+        SetList::YII_CORE,
+    ]);
 ```
 
 ## Documentation
