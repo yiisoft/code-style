@@ -32,8 +32,8 @@
         "rector/rector": "^2.0"
     },
     "require-dev": {
-        "maglnet/composer-require-checker": "^3.8.0 || ^4.7.1",
         "phpunit/phpunit": "^9.6.31",
+        "shipmonk/composer-dependency-analyser": "^1.8",
         "vimeo/psalm": "^5.26.1 || ^6.10.3"
     },
     "autoload": {
@@ -54,6 +54,7 @@
     },
     "scripts": {
         "test": "phpunit",
-        "cs-fix": "php-cs-fixer fix"
+        "cs-fix": "php-cs-fixer fix",
+        "dependency-analyser": "composer-dependency-analyser"
     }
 }
