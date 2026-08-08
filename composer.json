@@ -29,7 +29,6 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "friendsofphp/php-cs-fixer": "^3.92.5",
-        "nikic/php-parser": "^4 || ^5",
         "rector/rector": "^2.0"
     },
     "require-dev": {
