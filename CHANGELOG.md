@@ -2,7 +2,8 @@
 
 ## 1.1.1 under development
 
-- no changes in this release.
+- Chg #15: Remove `NullToStrictStringFuncCallArgRector` from `SetList::YII_CORE` skip list since it is never
+  registered by Rector (@vjik)
 
 ## 1.1.0 July 27, 2026
 
